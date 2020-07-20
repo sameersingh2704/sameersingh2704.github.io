@@ -1,176 +1,803 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
+    
+<head>
+        <title>Sameer - Tech with Ace </title>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Tech with Ace</title>
-        <link rel="icon" type="image/icon" href="assets/images/tabicon.ico">
-
-        <link rel="stylesheet" type="text/css" href="">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:700" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
-        <link rel="icon" href="assets/images/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!-- <meta name="description" content="Maha Personal cv/resume template for professional and personal website." />
+        <meta name="keywords" content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard " />
+        <meta name="developer" content="Md. Siful Islam">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                 -->
+        <!-- FAV AND ICONS   -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/apple-icon.png">
+        <link rel="shortcut icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="shortcut icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+        
+        <!-- Google Font-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+        <!-- Animate CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/animate.css">
+        <!-- Owl Carousel CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/owl.css">
+        <!-- Fancybox-->
+        <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+        
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- Colors -->
+        <link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue">
+        <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld">
+        <link rel="alternate stylesheet" href="assets/css/colors/green.css" title="green">
+        <link rel="alternate stylesheet" href="assets/css/colors/blue-munsell.css" title="blue-munsell">
+        <link rel="alternate stylesheet" href="assets/css/colors/orange.css" title="orange">
+        <link rel="alternate stylesheet" href="assets/css/colors/purple.css" title="purple"> 
+        <link rel="alternate stylesheet" href="assets/css/colors/slate.css" title="slate">
+        <link rel="alternate stylesheet" href="assets/css/colors/yellow.css" title="yellow">
         
     </head>
-
-    <body>
-        <div id="index">                                           <!-- Index starts here -->
-            <div class="container main">
-                <div class="row home">
-                    <div id = "index_left" class="col-md-6 left">
-                        <img class="img-responsive img-rabbit" src="assets/images/home.jpg">
-                    </div>
-                    <div id = "index_right" class="col-md-6 text-center right">
-                        <div class="logo">
-                            <img src="assets/images/logo.png">
-                            <h4>I am Sameer</h4>
+    <body class="dark-vertion black-bg">
+        
+        <!-- Start Loader -->
+        <div class="section-loader">
+            <div class="loader">
+                <div></div>
+                <div></div> 
+            </div>
+        </div>
+        <!-- End Loader -->
+        
+        <!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-skills">Skills</a>
+                                </li>                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-experience">Experiences</a>
+                                </li>                                
+                                
+                            </ul>
                         </div>
-                        <p class="home-description">
-                            Hi, I am Sameer, Software Engineer from India. I am passionate about technologies and development . I really love what I do.
-                        </p>
-                        <div class="btn-group-vertical custom_btn animated slideinright">
-                            <div id="about" class="btn btn-rabbit">About</div>
-                            <div id="work" class="btn btn-rabbit">Work</div>
-                            
-                            <div id="project" class="btn btn-rabbit">Project</div>
-                        </div>      
-                        <div class="social">
-                            <a href="https://github.com/sameersingh2704/"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <!-- <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
-                            <a href="https://www.linkedin.com/in/sameersingh2704/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--
+        ===================
+           Home
+        ===================
+        -->
+        <section class="mh-home image-bg home-2-img" id="mh-home">
+            <div class="img-foverlay img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator xs-column-reverse vertical-middle-content home-padding">
+                        <div class="col-sm-6">
+                            <div class="mh-header-info">
+                                <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                                    <span>Hello I'm</span>
+                                </div>
+                                
+                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Sameer Singh</h2>
+                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Software Engineer</h4>
+                                
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:">sameersingh2704@email.com</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">+91 7376492335</a></li>
+                                    <!-- <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><address>37, Pollsatnd, New York, United State</address></li> -->
+                                </ul>
+                                
+                                <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                                    <li><a href="https://github.com/sameersingh2704/"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/sameersingh2704/"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                <!-- <div class="img-border"> -->
+                                    <img src="assets/images/hero.png" alt=""  class="img-fluid">
+                                <!-- </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           ABOUT
+        ===================
+        -->
+        <section class="mh-about" id="mh-about">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                            <img src="assets/images/ab-img.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-inner">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
+                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Hello, I’m a Sameer, software-developer from India. 
+                            I have rich experience working with different technologies. I always try to implement new stuff in a new technology.</p>
+                            
+                            <a href="assets/resume/Sameer_Resume.pdf" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Downlaod CV <i class="fa fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           SERVICE
+        ===================
+        -->
+        
+        <section class="mh-service">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h2>What I do</h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <i class="fa fa-cogs purple-color"></i>
+                            <h3>Scripting & Automation</h3>
+                            <p>
+                                I can provide you with scripts that you desire. You can use some Automation scripts to perform your daily task and save your time because time is a storm in which we are all lost.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <i class="fa fa-code" style="color: chartreuse;"></i>
+                            <h3>Software Development</h3>
+                            <p>
+                                I can provide GUI based Softwares that meets your requirements. These softwares have high performance and stunning User Interface to make your experience much better.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <i class="fa fa-line-chart" style="color:#ee2727;"></i>
+                            <h3>Data Analytics</h3>
+                            <p>
+                                I can solve your Big Data and Analytics Problem and help you visualize it with perfect graphs according to your needs. Data is not a problem, it's an emotion.
+                            </p>
+                        </div>
+                    </div>
+                    <section class="mh-service">
+                        <div class="container">
+                            <div class="row section-separator">
+                                <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <i class="fa fa-file-code-o purple-color"></i>
+                                        <h3>Web Development</h3>
+                                        <p>
+                                            I can provide you stunning and highly efficient websites to attract your customers. These websites are easy to maintain because of the Content Management System (CMS).
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <i class="fa fa-mobile" style="color: chartreuse;"></i>
+                                        <h3>Hybrid App Development</h3>
+                                        <p>
+                                            I can provide you highly efficient Hybrid Apps that you can run on any device regaurdless of your Operating System. These app use a single code base which make them easy to maintain.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <i class="fa fa-cogs" style="color:#ee2727;"></i>
+                                        <h3>Cloud & Servers</h3>
+                                        <p>
+                                            Nowadays, every one is moving their work in Cloud because they provide high performance, they are easy to maintain and you only need to pay for what you use.
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                    
+                    
+                </div>
+                
+                </div>
                 
             </div>
-        </div>                                                      <!-- index ends here -->
-
-        <div id="about_scroll" class="pages ">                      <!-- about strats here  -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6 left" id="about_left">
-                        <img class="img-responsive img-rabbit" src="assets/images/about.jpg">
-                    </div>
-
-                    <div class="col-md-6 right" id="about_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>About</h2>
-                            <div class="marker">a</div>
-                        </div>
-                        <p class='subtitle'>Hi, I am Sameer Singh. A full stack developer and data analyst.
-                        </p>
-                        <p class="info">"I am currently pursuing bachelor of technology in the field of computer science and engineering. I am passionate about learning new skills and technology. I wrote my first script when I was 13. I love to play Video Games in my free time."</p>  
-                    </div>
-                </div>
-            </div>            
-        </div>                                                                <!-- About ends here -->
-
-
+        </section>
         
-        <div id="work_scroll" class="pages">                                  <!-- Work starts here -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6" id="work_left">
-                        <div id="owl-demo" class="owl-carousel owl-theme">
-                            <div class="item"><img class="img-responsive img-rabbit" src="assets/images/work.jpg"></div>
-                            <div class="item"><img class="img-responsive img-rabbit" src="assets/images/home.jpg"></div>
-                            <div class="item"><img class="img-responsive img-rabbit" src="assets/images/contact.jpg"></div>
-                        </div>
+        <!--
+        ===================
+          FEATURE PROJECTS
+        ===================
+        -->
+        <!--
+        ===================
+           SKILLS
+        ===================
+        -->
+        <section class="mh-skills" id="mh-skills">
+            <div class="home-v-img">
+                <div class="container">
+                    <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h2>Skills</h2>
                     </div>
-
-                    <div class="col-md-6" id="work_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>Work</h2>
-                            <div class="marker">w</div>
-                        </div>
-                        <p class='subtitle'>I've been involved in various internships.<br>Internship experience:<br>
-                            <ul>
-                                <li>I have worked as a <b>Wordpress developer</b> at <b>Expert Web India</b> with direct contact with clients and made the desired websites for them for the period of <b>1stJan 2019-28thFeb 2020 and 1stJune 2019-31st July 2020</b>.</li>
-                            <li>I have worked on <b>Hadoop Setup & Big Data Analytics</b> using HIVE, developed a <b>2-D Games</b> using Flutter, developed <b>WhatsApp Bulk Messenger with GUI</b> using Python, configured <b>Email Server</b>, created a mechanism for  <b>Data Scrapping</b> from various <b>Search Engines</b> using Python, created a script for <b>Bad Data Filtering</b> using Python at <b>OKLI Pvt. Ltd</b> for the period of <b>15th March 2020-15th July 2020</b>.</li>
-                            </ul>
-                            
-                        </p>
+                    <div class="row section-separator">
                         
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Programming Languages</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">C</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">C++</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Python</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Java</div>
+                                                    <div class="percentagem-num">80%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 80%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                        
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Dart</div>
+                                                    <div class="percentagem-num">65%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 65%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Web Development</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">HTML</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">CSS</div>
+                                                    <div class="percentagem-num">65%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 65%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Wordpress</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Cloud</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">AWS</div>
+                                                    <div class="percentagem-num">35%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 35%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Google Cloud</div>
+                                                    <div class="percentagem-num">25%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 25%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Database</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">SQL</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">HQL</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Frameworks</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Hadoop</div>
+                                                    <div class="percentagem-num">65%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 65%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">PySpark</div>
+                                                    <div class="percentagem-num">55%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 55%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Flutter</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Selenium</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Flask</div>
+                                                    <div class="percentagem-num">65%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 65%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">PyQT</div>
+                                                    <div class="percentagem-num">70%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 70%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Swings</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-skills-inner">
+                                <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <h3>Others</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Linux</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Git</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Tableau</div>
+                                                    <div class="percentagem-num">65%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 65%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Adobe-XD</div>
+                                                    <div class="percentagem-num">75%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Photoshop</div>
+                                                    <div class="percentagem-num">70%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 70%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">Elementor</div>
+                                                    <div class="percentagem-num">70%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 70%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="nome">MS-Office</div>
+                                                    <div class="percentagem-num">85%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentagem" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
-            </div>    
-        </div>                                                                 <!-- Work ends here  -->
-
-                            
-        <div id="project_scroll" class="pages">                             <!-- Project starts here -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6 left" id="project_left">
-                        <img class="img-responsive img-rabbit" src="assets/images/contact.jpg">
-                    </div>
-
-                    <div class="col-md-6 right" id="project_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>Projects</h2>
-                            <div class="marker">p</div>
-                        </div>
-                        <p class='subtitle'>I love developing new things;Some of my Projects:
-                            
-                            <ul>
-                                <li>
-                                    <b>Radian6 data analytics - (B. Tech Ist year)</b><br>
-Used Hive to perform data analytics and visualised the result on Tableau. Also worked on some sample datasets such as YouTube, Airlines and Movie lens.
-
-                                </li>
-                                <li>
-                                    <b>Management Systems - (B. Tech IInd year)</b><br>
-Desktop based UI application using JAVA and SWING which includes Library Management, Hotel Management and Medical Store Management System.
-
-                                </li>
-                                <li>
-                                    <b>Multi-node Hadoop Cluster- (B. Tech IInd year)</b><br>
-Setup a Hadoop cluster of 1 MasterNode and 3 SlaveNodes at college lab and performed analytics of large datasets using it.
-
-                                </li>
-                                <!-- <li>
-                                    <b>Pratham Pag - (B. Tech IInd year)</b><br>
-Build a website using Wordpress and Elementor for Pratham Pag School.
-
-                                </li> -->
-                                <li>
-                                    <b>Virtual Assistant- (B. Tech IInd year)</b><br>
-Build a virtual assistant to perform daily task on voice input using Speech Recognition module of Python.
-
-                                </li>
-                                <li>
-                                    <b>Image Recognition App - (B. Tech IInd year)</b><br>
-Build an Image Recognition App using Yolo v2 module using Flutter in such a way that I can execute my App on both Android and iOS using a single code base.
-
-                                </li>
-                                <li>
-                                   <b>E-Commerce Website - (B. Tech IIIrd year)</b><br>
-Build a multivendor E-Commerce Website for the tribal at Smart India Hackathon using Wordpress and integrated some AI plugins for Sentiment Analysis, Product recommendation and Chatbot.
-
-                                </li>
-                            </ul>
-                            
-                        </p>
-                        
-                        
-                    </div>
-                </div>
-            </div>    
-        </div>                                       <!-- Contact ends here -->
+            </div>
+        </section>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+        <!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+        <section class="mh-experince image-bg featured-img-one" id="mh-experience">
+            <div class="img-color-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        
+                        <div class="col-sm-12 text-center section-title wow fadeInUp">
+                            <div class="mh-work">
+                                 <h3>Work Experience</h3>
+                                <div class="mh-experience-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                                        <h4>Wordpress Developer <a href="http://www.expertwebindia.biz/">Expert Web India</a></h4>
+                                        <div class="mh-eduyear">1<sup>st</sup> Jan,2019 to 28<sup>th</sup> Feb,2020<br>1<sup>st</sup> June,2019 to 31<sup>st</sup> July,2020</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Developing Customized Wordpress Website</li>
+                                            <li><i class="fa fa-circle"></i>Optimizing Existing Websites</li>
+                                        </ul>
+                                    </div>                                
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                        <h4>Software Developer <a href="https://okli.in/">OKLI Pvt.Ltd.</a></h4>
+                                        <div class="mh-eduyear">15<sup>th</sup> March,2020 to 15<sup>th</sup> July,2020</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Hadoop Setup & Big Data Analytics using HIVE</li>
+                                            <li><i class="fa fa-circle"></i>2-D Game Development</li>
+                                            <li><i class="fa fa-circle"></i>WhatsApp Bulk Messenger with GUI</li>
+                                            <li><i class="fa fa-circle"></i>Configuring Email Server</li>
+                                            <li><i class="fa fa-circle"></i>Mechanism for Data Scrapping from various Search Engines</li>
+                                            <li><i class="fa fa-circle"></i>Bad Data Filtering</li>
+
+                                        </ul>
+                                    </div>                                
+                                    <!-- Education Institutes-->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>       
+        <!--
+        ===================
+           PORTFOLIO
+        ===================
+        -->
+        <section class="mh-portfolio" id="mh-portfolio">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3>Products</h3>
+                    </div>
+                    <div class="part col-sm-12">
+                        <div class="portfolio-nav col-sm-12" id="filter-button">
+                            <ul>
+                                <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
+                                <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Automation</span></li>
+                                <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Hybrid Apps</span></li>
+                                <!-- <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li> -->
+                                <!-- <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li> -->
+                            </ul>
+                        </div>
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="portfolioContainer row">
+                                <!-- Product Details -->
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="assets/images/portfolio/Whatsapp_main.png" alt="Whatsapp">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">WhatsApp Bulk Messenger</h5>
+                                            <span class="sub-title">Automation</span>
+                                            <a data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                            </div> <!-- End: .grid .project-gallery -->
+                        </div> <!-- End: .grid .project-gallery -->
+                    </div> <!-- End: .part -->
+                </div> <!-- End: .row -->
+            </div>
+            <div class="mh-portfolio-modal" id="mh">
+                <div class="container">
+                    <div class="row mh-portfolio-modal-inner">
+                        <div class="col-sm-5">
+                            <h2>WhatsApp Bulk Automation</h2>
+                            <p>Bulk WhatsApp Marketing Software allows users to send text, images, videos, pdf, documents, etc. 
+                                It requires a text file with all the numbers in a new line.
+                            </p>       
+                            
+                            <p>We respect your privacy. So we take your data.</p>      
+                            <div class="mh-about-tag">
+                                <ul>
+                                    <li><span>Python</span></li>
+                                    <li><span>PyQT</span></li>
+                                    <li><span>Selenium</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-fill">Get now</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="mh-portfolio-modal-img">
+                                <img src="assets/images/portfolio/whatsapp_1.jpg" alt="" class="Whatsapp">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!--
+        ===================
+           FOOTER 3
+        ===================
+        -->
+        <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: Tech With Ace
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- jQuery -->
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="assets/plugins/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/js/owl.carousel.js"></script>
+    <!-- validator -->
+    <script src="assets/plugins/js/validator.min.js"></script>
+    <!-- wow -->
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <!-- mixin js-->
+    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
+    <!-- circle progress-->
+    <script src="assets/plugins/js/circle-progress.js"></script>
+    <!-- jquery nav -->
+    <script src="assets/plugins/js/jquery.nav.js"></script>
+    <!-- Fancybox js-->
+    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+    <!-- Map api -->
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
+    <!-- isotope js-->
+    <script src="assets/plugins/js/isotope.pkgd.js"></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
+    <!-- Custom Scripts-->
+    <script src="assets/js/map-init.js"></script>
+    <script src="assets/js/custom-scripts.js"></script>
+
+
+    <!-- ****************
+      After neccessary customization/modification, Please minify 
+      JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
+    **************** -->
+    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+    <link rel="stylesheet" href="demo/demo.css">
+    <script type="text/javascript" src="demo/styleswitcher.js"></script>
+    <script type="text/javascript" src="demo/demo.js"></script>
+        <div class="demo-style-switch" id="switch-style">
+    
+
+</body>
+
 </html>
