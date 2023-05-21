@@ -87763,7 +87763,8 @@ p=A.cG(j,j,20)
 o=k.a.c
 n=o.d!==""?A.d1(j,A.zp(!1,!0,A.vu("assets/icons/play_store.svg",j,40,40),j,!0,j,j,j,j,j,j,j,j,j,new A.amI(k),j,j,j,j),B.n,j,j,j,j,j,j,j,j,j,j):A.atX()
 m=A.cG(j,j,20)
-o=o.f!==""?A.d1(j,A.zp(!1,!0,A.axY("assets/images/web_icon.png",B.bV,j,40,40),j,!0,j,j,j,j,j,j,j,j,j,new A.amJ(k),j,j,j,j),B.n,j,j,j,j,j,j,j,j,j,j):A.atX()
+o=o.f
+o=o!==""&&o!=null?A.d1(j,A.zp(!1,!0,A.axY("assets/images/web_icon.png",B.bV,j,40,40),j,!0,j,j,j,j,j,j,j,j,j,new A.amJ(k),j,j,j,j),B.n,j,j,j,j,j,j,j,j,j,j):A.atX()
 l=t.p
 l=A.a([i,r,q,A.lQ(A.a([s,p,n,m,o],l),B.aN,B.rW,B.Z)],l)
 o=A.aM([null,0],t.LO,t.S)
