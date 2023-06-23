@@ -38,10 +38,15 @@
         display: flex; /* Default Axis is X*/
         justify-content: center; /* Main Axis */
         align-items: center; /* Cross Axis */
+  animation: mymove 5s infinite;
+
       }
       .indicator{
         width: 50vw;
       }
+      @keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
 
 
 
@@ -51,14 +56,14 @@
 <body style="overflow: hidden">
 
 <div class="container" id="loading_indicator">
-    <img class="indicator" src="./assets/loading.gif"/>
+    <img class="indicator" src="./icons/Icon-512.png"/>
 </div>
 <!-- This script installs service_worker.js to provide PWA functionality to
      application. For more information, see:
      https://developers.google.com/web/fundamentals/primers/service-workers -->
 
 <script>
-    var serviceWorkerVersion = "461851360";
+    var serviceWorkerVersion = "809157144";
     var scriptLoaded = false;
 
     function loadMainDartJs() {
