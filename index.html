@@ -1,151 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--
-      If you are serving your web app in a path other than the root, change the
-      href value below to reflect the base path you are serving from.
+  <base href="/">
 
-      The path provided below has to start and end with a slash "/" in order for
-      it to work correctly.
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Sameer Singh – Flutter & Algo Trading">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      For more details:
-      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-    -->
-    <base href="/">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Sameer Singh">
 
-    <meta charset="UTF-8">
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta content="A new Flutter project." name="description">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="manifest" href="manifest.json">
+  <title>Sameer Singh</title>
 
-    <!-- iOS meta tags & icons -->
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
-    <meta content="responsive_portfolio" name="apple-mobile-web-app-title">
-    <link href="icons/logo_pink.png" rel="apple-touch-icon">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #0B0B0B;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
 
-    <link href="icons/logo_pink.png" rel="shortcut icon" type="image/x-icon">
-    <link href="icons/logo_pink.png" rel="icon" type="image/x-icon">
+    /* ===== Loader Root ===== */
+    #flutter_loader {
+      position: fixed;
+      inset: 0;
+      background: #0B0B0B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-    <title>Sameer's Portfolio</title>
-    <link href="manifest.json" rel="manifest">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    /* ===== Subtle Grid ===== */
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 90px 90px;
+      animation: gridMove 20s linear infinite;
+    }
 
+    /* ===== Loader Content ===== */
+    .loader-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+    }
 
-    <style>
-      .container {
-        width: 100vw;
-        height: 100vh;
-        display: flex; /* Default Axis is X*/
-        justify-content: center; /* Main Axis */
-        align-items: center; /* Cross Axis */
-  animation: mymove 5s infinite;
+    /* ===== Vertical Scan Line ===== */
+    .indicator {
+      width: 2px;
+      height: 150px;
+      background: rgba(255,214,10,0.35);
+      overflow: hidden;
+      position: relative;
+    }
 
+    .indicator::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        #FFD60A,
+        transparent
+      );
+      animation: scan 2.4s ease-in-out infinite;
+    }
+
+    /* ===== Text ===== */
+    .content {
+      margin-left: 40px;
+      max-width: 280px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 600;
+      color: #FFFFFF;
+      letter-spacing: 0.4px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .tagline {
+      margin-top: 8px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.5px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease-out forwards;
+      animation-delay: 0.55s;
+    }
+
+    .status {
+      margin-top: 18px;
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      color: #FFD60A;
+      opacity: 0.6;
+      animation: blink 1.8s infinite;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes gridMove {
+      from { transform: translateY(0); }
+      to { transform: translateY(90px); }
+    }
+
+    @keyframes scan {
+      0% { transform: translateY(-100%); }
+      50% { transform: translateY(0); }
+      100% { transform: translateY(100%); }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
       }
-      .indicator{
-        width: 50vw;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      @keyframes mymove {
-  50% {transform: rotate(180deg);}
-}
+    }
 
-
-
-    </style>
-
+    @keyframes blink {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
+    }
+  </style>
 </head>
-<body style="overflow: hidden">
 
-<div class="container" id="loading_indicator">
-    <img class="indicator" src="./icons/logo_pink.png"/>
+<body>
+
+<!-- ===== Loader ===== -->
+<div id="flutter_loader">
+  <div class="grid"></div>
+
+  <div class="loader-content">
+    <div class="indicator"></div>
+
+    <div class="content">
+      <div class="name">Sameer Singh</div>
+      <div class="tagline">Flutter · Algo Trading · Systems</div>
+      <div class="status">INITIALIZING</div>
+    </div>
+  </div>
 </div>
-<!-- This script installs service_worker.js to provide PWA functionality to
-     application. For more information, see:
-     https://developers.google.com/web/fundamentals/primers/service-workers -->
+
+<!-- ===== Flutter Bootstrap ===== -->
+<script src="flutter_bootstrap.js" async></script>
 
 <script>
-    const serviceWorkerVersion = "644516516";
-    var scriptLoaded = false;
-
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
+  window.addEventListener('flutter-first-frame', () => {
+    const loader = document.getElementById('flutter_loader');
+    if (loader) {
+      loader.style.opacity = '0';
+      loader.style.transition = 'opacity 0.4s ease';
+      setTimeout(() => loader.remove(), 400);
     }
-
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              if(reg.installing != null) {
-                waitForActivation(reg.installing);
-              }
-              if(reg.waiting != null) {
-                waitForActivation(reg.waiting);
-              }
-              // waitForActivation(reg.installing ?? reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
-
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-
-
+  });
 </script>
-<script>
-  window.onload = function () {
-        setTimeout(function () {
-          var loadingIndicator = document.getElementById("loading_indicator");
-          if (loadingIndicator) {
-            loadingIndicator.remove();
-          }
-        }, 10000);
-};
 
-
-</script>
 </body>
 </html>
